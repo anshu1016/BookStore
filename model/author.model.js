@@ -6,7 +6,7 @@ const authorSchema = new Schema({
     type: String,
     required: true,
   },
-  books: [{ type: Schema.Types.ObjectId, ref: "Book" }],
+  books: [{ type:Number, ref: "Book" }],
 });
 
 const AuthorModel = mongoose.model("Author", authorSchema);
